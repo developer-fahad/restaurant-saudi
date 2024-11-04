@@ -46,7 +46,7 @@ const Testimonial = () => {
 
   return (
     <div className="py-24">
-      <div className="max-w-[1180px] space-y-12 mx-auto xl:px-0 px-4">
+      <div className="max-w-[1320px] space-y-12 mx-auto xl:px-0 px-4">
         <SectionTitle
           subTitle={"Crispy, Every Bite Taste"}
           Title={"What Some of my Customers Say"}

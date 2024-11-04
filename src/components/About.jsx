@@ -14,7 +14,7 @@ const About = () => {
 
   return (
     <div className="relative">
-      <div className="py-24 max-w-[1180px] mx-auto xl:px-0 px-4">
+      <div className="py-24 max-w-[1320px] mx-auto xl:px-0 px-4">
         <img
           className="xl:scale-100 scale-0  absolute top-[50%] right-0"
           src={frame}
@@ -60,7 +60,7 @@ const About = () => {
                 </Tab>
               </TabList>
               <TabPanel className={""}>
-                <h1 className="text-[56px] leading-[56px] font-bebas font-bold pt-7">
+                <h1 className="lg:text-[62px] text-[40px] lg:leading-[56px] leading-[48px] font-bebas font-bold pt-7">
                   Exceptional culinary experience and delicious food
                 </h1>
                 <p className="font-roboto text-[16px] leading-[26px] pt-3 pb-3">
@@ -72,9 +72,9 @@ const About = () => {
                   presentation, giving you a true taste of Saudi Arabia's
                   vibrant and diverse culinary culture.
                 </p>
-                <div className="flex items-center gap-8">
+                <div className="flex items-center lg:gap-8 gap-3">
                   <Button text={"About More"} />
-                  <div className="flex items-center gap-1 font-roboto font-bold text-lg leading-[24px]">
+                  <div className="flex items-center gap-1 font-roboto font-bold lg:text-[14px] text-[16px] leading-[24px]">
                     <img src={call} alt="" />
                     <p>+88 3426 739 485</p>
                   </div>
@@ -143,8 +143,10 @@ const About = () => {
               <img className="w-6 h-6" src={pack} alt="" />
             </div>
             <div className="flex flex-col gap-1">
-              <h2 className="font-bebas font-medium text-3xl">Fast delivery</h2>
-              <p className="font-inter text-xl">Within 30 minutes</p>
+              <h2 className="font-bebas font-medium lg:text-3xl text-[24px]">
+                Fast delivery
+              </h2>
+              <p className="font-inter lg:text-xl text-lg">Within 30 minutes</p>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -152,10 +154,12 @@ const About = () => {
               <img className="w-6 h-6" src={medal} alt="" />
             </div>
             <div className="flex flex-col gap-1">
-              <h2 className="font-bebas font-medium text-3xl">
+              <h2 className="font-bebas font-medium lg:text-3xl text-[24px]">
                 Absolute dining
               </h2>
-              <p className="font-inter text-xl">Best buffet restaurant</p>
+              <p className="font-inter lg:text-xl text-lg">
+                Best buffet restaurant
+              </p>
             </div>
           </div>
           <div className="flex items-center gap-3">
@@ -163,10 +167,12 @@ const About = () => {
               <img className="w-6 h-6" src={bag} alt="" />
             </div>
             <div className="flex flex-col gap-1">
-              <h2 className="font-bebas font-medium text-3xl">
+              <h2 className="font-bebas font-medium lg:text-3xl text-[24px]">
                 Pickup delivery
               </h2>
-              <p className="font-inter text-xl">Grab your food order</p>
+              <p className="font-inter lg:text-xl text-lg">
+                Grab your food order
+              </p>
             </div>
           </div>
         </section>

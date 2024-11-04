@@ -18,9 +18,9 @@ const Hero = () => {
     >
       <Header></Header>
       <div className={` flex items-center  `}>
-        <div className="lg:pt-32 pt-20 pb-12 xl:max-w-[1180px] mx-auto xl:px-0 px-4 flex lg:flex-row flex-col">
-          <div className=" space-y-4 py-8 lg:relative w-full flex flex-col justify-center">
-            <h1 className=" lg:absolute lg:top-14 font-bebas lg:text-[120px] text-[42px] lg:leading-[130px] leading-none lg:w-[845px] w-full text-white z-10 lg:bg-gradient-to-r from-primary/0 to-primary/100 bg-transparent bg-clip">
+        <div className="lg:pt-32 lg:pb-44 pb-12 xl:max-w-[1320px] mx-auto xl:px-0 px-4 flex lg:flex-row flex-col">
+          <div className=" space-y-4 py-4 lg:relative w-full flex flex-col justify-center">
+            <h1 className=" lg:absolute lg:top-14 font-bebas lg:text-[120px] text-[48px] lg:leading-[130px] leading-[56px] lg:w-[845px] w-full text-white z-10 lg:bg-gradient-to-r from-primary/0 to-primary/100 bg-transparent bg-clip">
               Taste the authentic Saudi cuisine
             </h1>
             <p className="font-roboto lg:text-2xl text-xl font-normal xl:pt-52 lg:pt-[280px]  text-white">

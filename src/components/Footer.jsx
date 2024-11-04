@@ -22,7 +22,7 @@ const Footer = () => {
     >
       <div className="absolute inset-0 bg-black/65"></div>
       {/* Content */}
-      <div className="relative xl:max-w-[1180px] mx-auto xl:px-0 px-4 space-y-5 text-white z-10">
+      <div className="relative xl:max-w-[1320px] mx-auto xl:px-0 px-4 space-y-5 text-white z-10">
         <div>
           <h1 className="font-bebas font-bold text-[56px] uppercase text-center text-white">
             We are ready to provide you with the best dining experiences

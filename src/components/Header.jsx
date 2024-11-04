@@ -19,7 +19,7 @@ const Header = () => {
       //   backgroundRepeat: "no-repeat",
       // }}
     >
-      <div className="flex h-full xl:max-w-[1180px] px-4 xl:px-0 mx-auto items-center justify-between py-5">
+      <div className="flex h-full xl:max-w-[1320px] px-4 xl:px-0 mx-auto items-center justify-between py-5">
         <div className="flex items-center gap-1 text-white">
           <img className="w-7 h-7" src={logo} alt="" />
           <h2 className="font-poppins text-3xl">

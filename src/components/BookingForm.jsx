@@ -14,8 +14,8 @@ const BookingForm = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="max-w-[1180px] flex md:flex-row flex-col justify-between gap-8 mx-auto xl:px-0 px-4">
-        <div className="md:w-1/2 w-full space-y-6 text-white">
+      <div className="max-w-[1320px] flex lg:flex-row flex-col justify-between gap-8 mx-auto xl:px-0 px-4">
+        <div className="lg:w-1/2 w-full space-y-6 text-white">
           <SectionTitle subTitle={"Book Now"} Title={"Book Your Table"} />
           <p className="font-roboto text-[16px]">
             Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
@@ -24,7 +24,7 @@ const BookingForm = () => {
 
           <div className="">
             <form className="space-y-6 text-white" action="">
-              <div className="flex md:flex-row flex-col gap-3">
+              <div className="flex lg:flex-row flex-col gap-3">
                 <input
                   className="w-full px-2 py-2 bg-transparent focus-within:outline-none placeholder:text-[14px] placeholder:font-roboto border"
                   type="text"
@@ -38,7 +38,7 @@ const BookingForm = () => {
                   placeholder="Your Email"
                 />
               </div>
-              <div className="flex md:flex-row flex-col gap-3">
+              <div className="flex lg:flex-row flex-col gap-3">
                 <input
                   className="w-full px-2 py-2 bg-transparent focus-within:outline-none placeholder:text-[14px] placeholder:font-roboto border"
                   type="date"
@@ -52,7 +52,7 @@ const BookingForm = () => {
                   placeholder="Total People"
                 />
               </div>
-              <div className="flex md:flex-row flex-col gap-3">
+              <div className="flex lg:flex-row flex-col gap-3">
                 <textarea
                   rows={8}
                   className="w-full p-2  bg-transparent focus-within:outline-none placeholder:text-[14px] placeholder:font-roboto border"
@@ -66,7 +66,7 @@ const BookingForm = () => {
             </form>
           </div>
         </div>
-        <div className="md:w-1/2 w-full"></div>
+        <div className="lg:w-1/2 w-full"></div>
       </div>
     </div>
   );

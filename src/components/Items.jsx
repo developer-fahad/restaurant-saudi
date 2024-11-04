@@ -43,7 +43,7 @@ const Items = () => {
 
   return (
     <div className="bg-[#FBF7F2]">
-      <div className="py-24 max-w-[1180px] mx-auto xl:px-0 px-4">
+      <div className="py-24 max-w-[1320px] mx-auto xl:px-0 px-4">
         <SectionTitle
           subTitle={"Crispy, Every Bite Taste"}
           Title={"POPULAR FOOD ITEMS"}
