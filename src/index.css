@@ -14,3 +14,18 @@
 @tailwind components;
 @tailwind utilities;
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Makes the icon white */
+}
+/* Hide spinner in Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+   
+    margin: 0;
+}
+
+/* Hide spinner in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+

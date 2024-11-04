@@ -11,6 +11,13 @@ export default {
         inter: ["Inter", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      colors: {
+        primary: "#BD1F17",
+        secondary: "#FEBF00",
+      },
+      boxShadow: {
+        even: "0 0 10px rgba(0, 0, 0, 0.1)",
+      },
     },
   },
   plugins: [],
