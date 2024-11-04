@@ -7,7 +7,7 @@ import french from "../assets/french-fries 1.png";
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 import video3 from "../assets/video3.mp4";
-import img from '../assets/img.png'
+import img from "../assets/img.png";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,14 +19,19 @@ import "swiper/css/navigation"; // Include navigation styles
 
 // Import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { FaArrowLeft, FaArrowRight, FaAviato, FaQuoteLeft } from "react-icons/fa";
+import {
+  FaArrowLeft,
+  FaArrowRight,
+  FaAviato,
+  FaQuoteLeft,
+} from "react-icons/fa";
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
 
 // Custom navigation buttons
 const CustomPrevButton = ({ onClick }) => (
   <button
-    className="prev absolute z-10 right-20 -top-16  bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
+    className="prev absolute z-10 right-20 -top-12  bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
     onClick={onClick}
   >
     <GrFormPrevious className="text-xl  " />
@@ -35,7 +40,7 @@ const CustomPrevButton = ({ onClick }) => (
 
 const CustomNextButton = ({ onClick }) => (
   <button
-    className="next absolute z-10 right-2 -top-16 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
+    className="next absolute z-10 right-2 -top-12 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
     onClick={onClick}
   >
     <GrFormNext className="text-xl " />
@@ -83,7 +88,7 @@ const Testimonial = () => {
                 spaceBetween: 15,
               },
             }}
-            className="mySwiper  md:h-[450px] h-[550px]"
+            className="mySwiper  md:h-[450px] h-[700px]"
           >
             <SwiperSlide className=" h-full">
               <div className=" flex h-full md:flex-row flex-col-reverse  items-center">
@@ -94,14 +99,21 @@ const Testimonial = () => {
                     chicken is a bit dry). I would defiantly recommend it.
                     <FaQuoteLeft className="absolute top-0 -left-4 text-sm" />
                   </p>
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <p className="font-bebas text-lg font-medium">
-                        Khalid Al Dawsry
-                      </p>
-                      <p className="font-roboto text-sm">Jeddah, Saudi</p>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <p className="font-bebas text-lg font-medium">
+                          Khalid Al Dawsry
+                        </p>
+                        <p className="font-roboto text-sm">Jeddah, Saudi</p>
+                      </div>
+                      <img src={img} alt="" />
                     </div>
-                    <img src={img} alt="" />
+                    <div className="relative">
+                      <hr className="border border-gray-700 " />
+
+                      <hr className="absolute right-0 -top-1 border-4 border-primary w-[100px]" />
+                    </div>
                   </div>
                 </div>
                 <div className="md:w-7/12 h-full w-full">
@@ -133,14 +145,21 @@ const Testimonial = () => {
                     chicken is a bit dry). I would defiantly recommend it.
                     <FaQuoteLeft className="absolute top-0 -left-4 text-sm" />
                   </p>
-                  <div className="flex justify-between items-center">
-                    <div>
-                      <p className="font-bebas text-lg font-medium">
-                        Khalid Al Dawsry
-                      </p>
-                      <p className="font-roboto text-sm">Jeddah, Saudi</p>
+                  <div className="space-y-3">
+                    <div className="flex justify-between items-center">
+                      <div>
+                        <p className="font-bebas text-lg font-medium">
+                          Khalid Al Dawsry
+                        </p>
+                        <p className="font-roboto text-sm">Jeddah, Saudi</p>
+                      </div>
+                      <img src={img} alt="" />
                     </div>
-                    <img src={img} alt="" />
+                    <div className="relative">
+                      <hr className="border border-gray-700 " />
+
+                      <hr className="absolute right-0 -top-1 border-4 border-primary w-[100px]" />
+                    </div>
                   </div>
                 </div>
                 <div className="md:w-7/12 h-full w-full">
