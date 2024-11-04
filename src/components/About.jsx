@@ -6,7 +6,7 @@ import call from "../assets/call.png";
 import pack from "../assets/package.png";
 import medal from "../assets/medal.png";
 import bag from "../assets/bag.png";
-import frame from '../assets/Frame 1707478071.png'
+import frame from "../assets/Frame 1707478071.png";
 import Button from "./Button";
 
 const About = () => {
@@ -59,11 +59,11 @@ const About = () => {
                   Contact
                 </Tab>
               </TabList>
-              <TabPanel className={"py-7 space-y-5"}>
-                <h1 className="text-[56px] leading-[56px] font-bebas font-bold ">
+              <TabPanel className={""}>
+                <h1 className="text-[56px] leading-[56px] font-bebas font-bold pt-7">
                   Exceptional culinary experience and delicious food
                 </h1>
-                <p className="font-roboto text-[16px] leading-[26px]">
+                <p className="font-roboto text-[16px] leading-[26px] pt-3 pb-3">
                   Welcome to Restaurant, where we bring the soul of Saudi Arabia
                   to your table. Our chefs craft each dish with passion, drawing
                   from age-old recipes and authentic flavors that showcase the
@@ -80,8 +80,60 @@ const About = () => {
                   </div>
                 </div>
               </TabPanel>
-              <TabPanel>second</TabPanel>
-              <TabPanel>Third</TabPanel>
+              <TabPanel className={""}>
+                <h1 className="text-[56px] font-bebas !font-medium pt-5 ">
+                  Chef’s Story and Journey
+                </h1>
+                <p className="font-roboto text-[16px] leading-[26px] pb-3 pt-3">
+                  Visitors will feel a personal connection with the chefs and
+                  the food’s story, adding depth to their dining expectations.
+                </p>
+                <h1 className="text-[56px] font-bebas font-medium pt-5 ">
+                  Events and Special Occasions
+                </h1>
+                <p className="font-roboto text-[16px] leading-[26px] pb-3 pt-3">
+                  This gives customers a reason to return and see your
+                  restaurant as a place for special occasions and unique
+                  experiences.
+                </p>
+              </TabPanel>
+              <TabPanel>
+                <div className=" px-2 ">
+                  <h2 className="text-[56px] font-semibold font-bebas  pt-5">
+                    Get in Touch
+                  </h2>
+                  <p className="font-roboto pt-5 pb-5">
+                    Have a question, comment, or suggestion? We’d love to hear
+                    from you! Our team is here to assist you with any inquiries
+                    about our menu, service, or special requests. Please reach
+                    out to us through the form below, and we’ll get back to you
+                    as soon as possible.
+                  </p>
+                  <form>
+                    <label
+                      htmlFor="email"
+                      className="block text-3xl font-roboto font-bold mb-2"
+                    >
+                      Subscribe Newsletter
+                    </label>
+                    <div className="flex items-center">
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        className="w-full py-2 px-2 border border-gray-300 focus:outline-none "
+                        required
+                      />
+
+                      <input
+                        className="py-2 border border-secondary px-5 text-[16px] font-roboto font-bold uppercase bg-secondary"
+                        type="submit"
+                        value="Subscribe"
+                      />
+                    </div>
+                  </form>
+                </div>
+              </TabPanel>
             </Tabs>
           </div>
         </section>
@@ -91,7 +143,7 @@ const About = () => {
               <img className="w-6 h-6" src={pack} alt="" />
             </div>
             <div className="flex flex-col gap-1">
-              <h2 className="font-bebas font-bold text-3xl">Fast delivery</h2>
+              <h2 className="font-bebas font-medium text-3xl">Fast delivery</h2>
               <p className="font-inter text-xl">Within 30 minutes</p>
             </div>
           </div>
@@ -100,7 +152,9 @@ const About = () => {
               <img className="w-6 h-6" src={medal} alt="" />
             </div>
             <div className="flex flex-col gap-1">
-              <h2 className="font-bebas font-bold text-3xl">Absolute dining</h2>
+              <h2 className="font-bebas font-medium text-3xl">
+                Absolute dining
+              </h2>
               <p className="font-inter text-xl">Best buffet restaurant</p>
             </div>
           </div>
@@ -109,7 +163,9 @@ const About = () => {
               <img className="w-6 h-6" src={bag} alt="" />
             </div>
             <div className="flex flex-col gap-1">
-              <h2 className="font-bebas font-bold text-3xl">Pickup delivery</h2>
+              <h2 className="font-bebas font-medium text-3xl">
+                Pickup delivery
+              </h2>
               <p className="font-inter text-xl">Grab your food order</p>
             </div>
           </div>

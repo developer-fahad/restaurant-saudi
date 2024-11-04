@@ -97,9 +97,7 @@ const Items = () => {
               <div className="bg-white space-y-2 flex flex-col h-72 py-12 items-center">
                 <img src={pizza} alt="Pizza" />
                 <hr className="border-2 border-primary w-3/12 mx-auto" />
-                <h2 className="font-bebas text-2xl font-bold">
-                  Vegetables Burger
-                </h2>
+                <h2 className="font-bebas text-2xl font-bold">Spacial Pizza</h2>
                 <p className="font-inter text-[16px]">
                   Barbecue Italian cuisine pizza
                 </p>
@@ -110,10 +108,10 @@ const Items = () => {
                 <img src={chicken} alt="Chicken" />
                 <hr className="border-2 border-primary w-3/12 mx-auto" />
                 <h2 className="font-bebas text-2xl font-bold">
-                  Vegetables Burger
+                  Cuisine Chicken
                 </h2>
                 <p className="font-inter text-[16px]">
-                  Barbecue Italian cuisine pizza
+                  Japanese Cuisine Chicken
                 </p>
               </div>
             </SwiperSlide>
@@ -122,16 +120,16 @@ const Items = () => {
                 <img src={french} alt="French Fries" />
                 <hr className="border-2 border-primary w-3/12 mx-auto" />
                 <h2 className="font-bebas text-2xl font-bold">
-                  Vegetables Burger
+                  Spacial French fries
                 </h2>
                 <p className="font-inter text-[16px]">
-                  Barbecue Italian cuisine pizza
+                  Barbecue Italian cuisine
                 </p>
               </div>
             </SwiperSlide>
             <SwiperSlide className="">
               <div className="bg-white space-y-2 flex flex-col h-72 py-12 items-center">
-                <img src={chicken} alt="Chicken" />
+                <img src={burger} alt="Burger" />
                 <hr className="border-2 border-primary w-3/12 mx-auto" />
                 <h2 className="font-bebas text-2xl font-bold">
                   Vegetables Burger
