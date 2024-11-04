@@ -7,6 +7,7 @@ import french from "../assets/french-fries 1.png";
 import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 import video3 from "../assets/video3.mp4";
+import img from '../assets/img.png'
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -18,14 +19,14 @@ import "swiper/css/navigation"; // Include navigation styles
 
 // Import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { FaArrowLeft, FaArrowRight, FaAviato } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaAviato, FaQuoteLeft } from "react-icons/fa";
 import { GrFormPrevious } from "react-icons/gr";
 import { GrFormNext } from "react-icons/gr";
 
 // Custom navigation buttons
 const CustomPrevButton = ({ onClick }) => (
   <button
-    className="prev absolute z-10 md:right-20 md:-top-20 right-52  top-96 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
+    className="prev absolute z-10 right-20 -top-16  bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
     onClick={onClick}
   >
     <GrFormPrevious className="text-xl  " />
@@ -34,7 +35,7 @@ const CustomPrevButton = ({ onClick }) => (
 
 const CustomNextButton = ({ onClick }) => (
   <button
-    className="next absolute z-10 md:right-2 md:-top-20 right-36  top-96 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
+    className="next absolute z-10 right-2 -top-16 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
     onClick={onClick}
   >
     <GrFormNext className="text-xl " />
@@ -82,22 +83,25 @@ const Testimonial = () => {
                 spaceBetween: 15,
               },
             }}
-            className="mySwiper  md:h-[350px] h-[550px]"
+            className="mySwiper  md:h-[450px] h-[550px]"
           >
             <SwiperSlide className=" h-full">
               <div className=" flex h-full md:flex-row flex-col-reverse  items-center">
-                <div className="md:w-5/12 flex flex-col justify-between p-8 h-full w-full bg-secondary ">
-                  <p>
+                <div className="md:w-5/12 flex flex-col justify-between px-8 lg:py-12 py-6 h-full w-full bg-secondary ">
+                  <p className="relative font-roboto lg:text-xl text-lg">
                     You can't go wrong with Chicken Mandi, I had it twice. The
                     chicken was cooked perfectly, juicy & soft (usually mandi
                     chicken is a bit dry). I would defiantly recommend it.
+                    <FaQuoteLeft className="absolute top-0 -left-4 text-sm" />
                   </p>
-                  <div>
+                  <div className="flex justify-between items-center">
                     <div>
-                      <p>Khalid Al Dawsry</p>
-                      <p>Jeddah, Saudi</p>
+                      <p className="font-bebas text-lg font-medium">
+                        Khalid Al Dawsry
+                      </p>
+                      <p className="font-roboto text-sm">Jeddah, Saudi</p>
                     </div>
-                    <img src={<FaAviato />} alt="" />
+                    <img src={img} alt="" />
                   </div>
                 </div>
                 <div className="md:w-7/12 h-full w-full">
@@ -122,18 +126,21 @@ const Testimonial = () => {
             </SwiperSlide>
             <SwiperSlide className="h-full">
               <div className="bg-white h-full flex md:flex-row flex-col-reverse  items-center">
-                <div className="md:w-5/12 flex flex-col justify-between p-8 h-full w-full bg-secondary ">
-                  <p>
+                <div className="md:w-5/12 flex flex-col justify-between px-8 lg:py-12 py-6 h-full w-full bg-secondary ">
+                  <p className="relative font-roboto lg:text-xl text-lg">
                     You can't go wrong with Chicken Mandi, I had it twice. The
                     chicken was cooked perfectly, juicy & soft (usually mandi
                     chicken is a bit dry). I would defiantly recommend it.
+                    <FaQuoteLeft className="absolute top-0 -left-4 text-sm" />
                   </p>
-                  <div>
+                  <div className="flex justify-between items-center">
                     <div>
-                      <p>Khalid Al Dawsry</p>
-                      <p>Jeddah, Saudi</p>
+                      <p className="font-bebas text-lg font-medium">
+                        Khalid Al Dawsry
+                      </p>
+                      <p className="font-roboto text-sm">Jeddah, Saudi</p>
                     </div>
-                    <img src={<FaAviato />} alt="" />
+                    <img src={img} alt="" />
                   </div>
                 </div>
                 <div className="md:w-7/12 h-full w-full">
