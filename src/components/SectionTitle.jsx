@@ -3,7 +3,7 @@ import { FaSquareFull } from "react-icons/fa";
 
 const SectionTitle = ({subTitle, Title}) => {
   return (
-    <div className="space-y-1">
+    <div className="space-y-1 z-50">
       <div className="flex gap-2 items-center text-primary">
         <FaSquareFull className="w-2.5 h-2.5 " />
         <h2 className="font-roboto text-xl font-bold">

@@ -8,6 +8,9 @@ import video1 from "../assets/video1.mp4";
 import video2 from "../assets/video2.mp4";
 import video3 from "../assets/video3.mp4";
 import img from "../assets/img.png";
+import veg from "../assets/12.png";
+import piz from "../assets/221.png";
+import butterfly from '../assets/Group.svg';
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -51,9 +54,23 @@ const Testimonial = () => {
   const swiperRef = useRef(null);
 
   return (
-    <div className="py-24">
+    <div
+      className="py-24
+    relative"
+    >
+      <img
+        className="absolute top-[10%] xl:block hidden -z-10"
+        src={piz}
+        alt=""
+      />
+      <img
+        className="absolute right-0 top-[20%] xl:block hidden -z-10"
+        src={veg}
+        alt=""
+      />
       <div className="max-w-[1320px] space-y-12 mx-auto xl:px-0 px-4">
         <SectionTitle
+          className={"z-50"}
           subTitle={"Crispy, Every Bite Taste"}
           Title={"What Some of my Customers Say"}
         />
@@ -92,7 +109,12 @@ const Testimonial = () => {
           >
             <SwiperSlide className=" h-full">
               <div className=" flex h-full md:flex-row flex-col-reverse  items-center">
-                <div className="md:w-5/12 flex flex-col justify-between px-8 lg:py-12 py-6 h-full w-full bg-secondary ">
+                <div className="md:w-5/12 flex relative flex-col justify-between lg:px-16 px-8 lg:py-12 py-6 h-full w-full bg-secondary ">
+                  <img
+                    className="absolute left-0 top-[75%]"
+                    src={butterfly}
+                    alt=""
+                  />
                   <p className="relative font-roboto lg:text-xl text-lg">
                     You can't go wrong with Chicken Mandi, I had it twice. The
                     chicken was cooked perfectly, juicy & soft (usually mandi
@@ -138,7 +160,12 @@ const Testimonial = () => {
             </SwiperSlide>
             <SwiperSlide className="h-full">
               <div className="bg-white h-full flex md:flex-row flex-col-reverse  items-center">
-                <div className="md:w-5/12 flex flex-col justify-between px-8 lg:py-12 py-6 h-full w-full bg-secondary ">
+                <div className="md:w-5/12 flex relative flex-col justify-between lg:px-16 px-8 lg:py-12 py-6 h-full w-full bg-secondary ">
+                  <img
+                    className="absolute left-0 top-[75%]"
+                    src={butterfly}
+                    alt=""
+                  />
                   <p className="relative font-roboto lg:text-xl text-lg">
                     You can't go wrong with Chicken Mandi, I had it twice. The
                     chicken was cooked perfectly, juicy & soft (usually mandi

@@ -11,7 +11,7 @@ const Header = () => {
     };
   return (
     <div
-      className="sticky top-0 h-24 w-full z-[100]"
+      className="sticky top-0 lg:h-24 md:h-20 h-16 w-full z-[100]"
       // style={{
       //   backgroundImage: `url(${hero})`,
       //   backgroundPosition: "center",
@@ -51,7 +51,7 @@ const Header = () => {
         <div className="hidden lg:block">
           <Button text={"Book a table"} />
         </div>
-        {/* Mobile Menu Button */}
+        {/* Mobile Menu */}
         <button
           onClick={toggleMenu}
           className="text-white lg:hidden block focus:outline-none"
@@ -72,23 +72,32 @@ const Header = () => {
             ></path>
           </svg>
         </button>
-        {/* Dropdown Menu with Slide-Down Animation */}
+        {/* Dropdown Menu with Animation */}
         <div
-          className={`absolute top-16 mt-2 w-48 bg-white right-4 shadow-lg rounded-lg transition-all duration-1000 transform ${
+          className={`absolute  mt-2 w-48 p-4 bg-white right-4 shadow-lg rounded-lg transition-all duration-700 transform ${
             isOpen
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 -translate-y-24 pointer-events-none"
+              ? "opacity-100 translate-y-0 top-14"
+              : "opacity-0 -translate-y-full top-0 pointer-events-none"
           }`}
         >
-          <ul className="text-gray-700">
-            <li className="px-4 py-2 hover:bg-gray-200">
-              <a href="#">Menu Item 1</a>
+          <ul className="font-raleway font-medium text-[15px]">
+            <li className="px-4 py-2">
+              <a href="">Home</a>
             </li>
-            <li className="px-4 py-2 hover:bg-gray-200">
-              <a href="#">Menu Item 2</a>
+            <li className="px-4 py-2">
+              <a href="">About</a>
             </li>
-            <li className="px-4 py-2 hover:bg-gray-200">
-              <a href="#">Menu Item 3</a>
+            <li className="px-4 py-2">
+              <a href="">Portfolio</a>
+            </li>
+            <li className="px-4 py-2">
+              <a href="">Clients</a>
+            </li>
+            <li className="px-4 py-2">
+              <a href="">Blog</a>
+            </li>
+            <li className="px-4 py-2">
+              <a href="">Contact</a>
             </li>
           </ul>
         </div>
