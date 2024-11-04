@@ -24,7 +24,7 @@ const Footer = () => {
       {/* Content */}
       <div className="relative xl:max-w-[1320px] mx-auto xl:px-0 px-4 space-y-5 text-white z-10">
         <div>
-          <h1 className="font-bebas font-bold text-[56px] uppercase text-center text-white">
+          <h1 className="font-bebas lg:font-bold font-medium lg:text-[56px] text-[40px] leading-[48px] uppercase text-center text-white">
             We are ready to provide you with the best dining experiences
           </h1>
         </div>
@@ -79,30 +79,30 @@ const Footer = () => {
         </div>
         <div className="space-y-2 pt-5">
           <ul className="flex justify-center gap-4">
-            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+            <li className="lg:p-2 p-1 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
               <a href="">
                 <img src={fb} alt="" />
               </a>
             </li>
-            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+            <li className="lg:p-2 p-1 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
               <a href="">
                 <img src={x} alt="" />
               </a>
             </li>
-            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+            <li className="lg:p-2 p-1 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
               <a href="">
                 <img src={insta} alt="" />
               </a>
             </li>
-            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+            <li className="lg:p-2 p-1 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
               <a href="">
                 <img src={linkedin} alt="" />
               </a>
             </li>
           </ul>
-          <p className="font-montserrat text-[21px] leading-[26px] text-center">
-            &copy; 2023 <span className="text-secondary">Niomax</span> All Rights
-            Reserved{" "}
+          <p className="font-montserrat lg:text-[21px] text-base leading-[26px] text-center">
+            &copy; 2023 <span className="text-secondary">Niomax</span> All
+            Rights Reserved{" "}
           </p>
         </div>
       </div>
