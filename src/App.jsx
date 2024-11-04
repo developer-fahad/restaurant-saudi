@@ -10,20 +10,14 @@ import Testimonial from "./components/Testimonial";
 function App() {
   return (
     <>
-      
-        <Header></Header>
-      
-      
-        <Hero></Hero>
-        <About></About>
-        <Items></Items>
-        <BookingForm></BookingForm>
-        <Testimonial></Testimonial>
-        <Footer></Footer>
-      
-      
-        {/* <SectionTitle></SectionTitle> */}
-      
+      <Hero></Hero>
+      <About></About>
+      <Items></Items>
+      <BookingForm></BookingForm>
+      <Testimonial></Testimonial>
+      <Footer></Footer>
+
+      {/* <SectionTitle></SectionTitle> */}
     </>
   );
 }

@@ -1,9 +1,13 @@
 import React from "react";
 import footer from "../assets/footer.jpeg";
-import clock from '../assets/clock.png'
-import call from '../assets/call-alt.png'
-import email from '../assets/mail.png'
-import map from '../assets/map-pin.png'
+import clock from "../assets/clock.png";
+import call from "../assets/call-alt.png";
+import email from "../assets/mail.png";
+import map from "../assets/map-pin.png";
+import fb from "../assets/facebook-circle.png";
+import x from "../assets/twitter-round-new-alt.png";
+import insta from "../assets/instagram-round.png";
+import linkedin from "../assets/linkedin-round.png";
 
 const Footer = () => {
   return (
@@ -18,7 +22,7 @@ const Footer = () => {
     >
       <div className="absolute inset-0 bg-black/65"></div>
       {/* Content */}
-      <div className="relative xl:max-w-[1180px] mx-auto xl:px-0 px-4 space-y-3 text-white z-10">
+      <div className="relative xl:max-w-[1180px] mx-auto xl:px-0 px-4 space-y-5 text-white z-10">
         <div>
           <h1 className="font-bebas font-bold text-[56px] uppercase text-center text-white">
             We are ready to provide you with the best dining experiences
@@ -72,6 +76,34 @@ const Footer = () => {
               <p className="font-roboto text-[16px]">States Of America</p>
             </div>
           </div>
+        </div>
+        <div className="space-y-2 pt-5">
+          <ul className="flex justify-center gap-4">
+            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+              <a href="">
+                <img src={fb} alt="" />
+              </a>
+            </li>
+            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+              <a href="">
+                <img src={x} alt="" />
+              </a>
+            </li>
+            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+              <a href="">
+                <img src={insta} alt="" />
+              </a>
+            </li>
+            <li className="p-2 rounded-full border hover:bg-primary hover:border-primary transition-all duration-300 border-white">
+              <a href="">
+                <img src={linkedin} alt="" />
+              </a>
+            </li>
+          </ul>
+          <p className="font-montserrat text-[21px] leading-[26px] text-center">
+            &copy; 2023 <span className="text-secondary">Niomax</span> All Rights
+            Reserved{" "}
+          </p>
         </div>
       </div>
     </div>

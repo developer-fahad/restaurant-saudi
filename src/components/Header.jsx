@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../assets/Frame.png";
 import Button from "./Button";
+import hero from "../assets/Rectangle 4.png";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,15 @@ const Header = () => {
       setIsOpen(!isOpen);
     };
   return (
-    <div className="fixed h-24 w-full z-[100]">
+    <div
+      className="sticky top-0 h-24 w-full z-[100]"
+      // style={{
+      //   backgroundImage: `url(${hero})`,
+      //   backgroundPosition: "center",
+      //   backgroundSize: "cover",
+      //   backgroundRepeat: "no-repeat",
+      // }}
+    >
       <div className="flex h-full xl:max-w-[1180px] px-4 xl:px-0 mx-auto items-center justify-between py-5">
         <div className="flex items-center gap-1 text-white">
           <img className="w-7 h-7" src={logo} alt="" />
@@ -45,7 +54,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="text-white lg:hidden focus:outline-none"
+          className="text-white lg:hidden block focus:outline-none"
         >
           {/* Hamburger Icon */}
           <svg
@@ -63,8 +72,26 @@ const Header = () => {
             ></path>
           </svg>
         </button>
-        {/* Mobile Menu */}
-        
+        {/* Dropdown Menu with Slide-Down Animation */}
+        <div
+          className={`absolute top-16 mt-2 w-48 bg-white right-4 shadow-lg rounded-lg transition-all duration-1000 transform ${
+            isOpen
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 -translate-y-24 pointer-events-none"
+          }`}
+        >
+          <ul className="text-gray-700">
+            <li className="px-4 py-2 hover:bg-gray-200">
+              <a href="#">Menu Item 1</a>
+            </li>
+            <li className="px-4 py-2 hover:bg-gray-200">
+              <a href="#">Menu Item 2</a>
+            </li>
+            <li className="px-4 py-2 hover:bg-gray-200">
+              <a href="#">Menu Item 3</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
