@@ -22,7 +22,7 @@ import { GrFormNext } from "react-icons/gr";
 // Custom navigation buttons
 const CustomPrevButton = ({ onClick }) => (
   <button
-    className="prev absolute z-10 right-20 -top-6 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
+    className="prev absolute z-10 right-20 -top-1 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
     onClick={onClick}
   >
     <GrFormPrevious className="text-xl  " />
@@ -31,7 +31,7 @@ const CustomPrevButton = ({ onClick }) => (
 
 const CustomNextButton = ({ onClick }) => (
   <button
-    className="next absolute z-10 right-2 -top-6 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
+    className="next absolute z-10 right-2 -top-1 bg-white text-black hover:text-primary rounded-full p-2 shadow-even"
     onClick={onClick}
   >
     <GrFormNext className="text-xl " />

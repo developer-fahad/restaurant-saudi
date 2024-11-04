@@ -6,7 +6,7 @@ import Button from "./Button";
 const BookingForm = () => {
   return (
     <div
-      className=" py-24 bg-black/50"
+      className=" lg:py-24 py-6 bg-black/50"
       style={{
         backgroundImage: `url(${form})`,
         backgroundPosition: "center",
