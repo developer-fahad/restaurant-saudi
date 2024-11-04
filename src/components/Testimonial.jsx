@@ -82,9 +82,9 @@ const Testimonial = () => {
                 spaceBetween: 15,
               },
             }}
-            className="mySwiper  h-[365px]"
+            className="mySwiper  md:h-[350px] h-[550px]"
           >
-            <SwiperSlide className="h-[365px]">
+            <SwiperSlide className=" h-full">
               <div className=" flex h-full md:flex-row flex-col-reverse  items-center">
                 <div className="md:w-5/12 flex flex-col justify-between p-8 h-full w-full bg-secondary ">
                   <p>
@@ -101,63 +101,58 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className="md:w-7/12 h-full w-full">
-                  <video src={video1}></video>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="h-[365px]">
-              <div className="bg-white h-full flex md:flex-row flex-col-reverse  items-center">
-                <div className="md:w-5/12 flex flex-col justify-between p-8 h-full w-full bg-secondary ">
-                  <p>
-                    You can't go wrong with Chicken Mandi, I had it twice. The
-                    chicken was cooked perfectly, juicy & soft (usually mandi
-                    chicken is a bit dry). I would defiantly recommend it.
-                  </p>
-                  <div>
-                    <div>
-                      <p>Khalid Al Dawsry</p>
-                      <p>Jeddah, Saudi</p>
-                    </div>
-                    <img src={<FaAviato />} alt="" />
-                  </div>
-                </div>
-                <div className="md:w-7/12 h-full w-full">
-                  <video
-                    loop={true}
-                    width={"100%"}
-                    height={"100%"}
-                    src={video2}
-                  ></video>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide className="h-[365px]">
-              <div className="bg-white h-full flex md:flex-row flex-col-reverse  items-center">
-                <div className="md:w-5/12 flex flex-col justify-between p-8 h-full w-full bg-secondary ">
-                  <p>
-                    You can't go wrong with Chicken Mandi, I had it twice. The
-                    chicken was cooked perfectly, juicy & soft (usually mandi
-                    chicken is a bit dry). I would defiantly recommend it.
-                  </p>
-                  <div>
-                    <div>
-                      <p>Khalid Al Dawsry</p>
-                      <p>Jeddah, Saudi</p>
-                    </div>
-                    <img src={<FaAviato />} alt="" />
-                  </div>
-                </div>
-                <div className="md:w-7/12 h-full w-full">
-                  <video
-                    loop={true}
-                    // width={"100%"}
-                    height={"800px"}
-                    src={video3}
+                  <div
+                    className="video-container"
                     style={{
-                      width: "100%" /* Adjust the width as needed */,
-                      /* Set your desired height */
+                      width: "100%",
+                      height: "100%",
+                      overflow: "hidden",
                     }}
-                  ></video>
+                  >
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/_dui6BUmMBg?loop=1&playlist=_dui6BUmMBg&autoplay=1&controls=0&mute=1&modestbranding=1&rel=0"
+                      title="YouTube video player"
+                      style={{ objectFit: "cover" }}
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide className="h-full">
+              <div className="bg-white h-full flex md:flex-row flex-col-reverse  items-center">
+                <div className="md:w-5/12 flex flex-col justify-between p-8 h-full w-full bg-secondary ">
+                  <p>
+                    You can't go wrong with Chicken Mandi, I had it twice. The
+                    chicken was cooked perfectly, juicy & soft (usually mandi
+                    chicken is a bit dry). I would defiantly recommend it.
+                  </p>
+                  <div>
+                    <div>
+                      <p>Khalid Al Dawsry</p>
+                      <p>Jeddah, Saudi</p>
+                    </div>
+                    <img src={<FaAviato />} alt="" />
+                  </div>
+                </div>
+                <div className="md:w-7/12 h-full w-full">
+                  <div
+                    className="video-container"
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      overflow: "hidden",
+                    }}
+                  >
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src="https://www.youtube.com/embed/_dui6BUmMBg?loop=1&playlist=_dui6BUmMBg&autoplay=1&controls=0&mute=1&modestbranding=1&rel=0"
+                      title="YouTube video player"
+                      style={{ objectFit: "cover" }}
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
