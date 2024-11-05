@@ -1,8 +1,28 @@
-# React + Vite
+## Live Preview
+[https://restaurant-saudi.netlify.app/]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Frameworks and Libraries Implemented
+This project includes the following frameworks and libraries:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **React.js** - for component-based structure and reactivity
+2. **Tailwind CSS** - for utility-first, responsive styling
+3. **React Icons** - for consistent and easy-to-use iconography
+4. **Swiper.js** - for smooth slide functionaliy
+5. **React Tabs** - For organize content, save space, and improve navigation efficiency.
+
+## Installation Instructions
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+    ```bash
+   git clone https://github.com/your-username/your-repo-name.git
+
+2. Install all dependencies
+    ```bash
+    npm i
+
+3. To start locally:
+    ```bash
+    npm run dev
+
